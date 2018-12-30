@@ -25,25 +25,25 @@ tab_url = 'https://www.google.com' # URL B
 chromedriver = 'DESCTINATION_TO_YOUR_CHROME_DRIVER'
 
 # Open main window with URL A
-broswer= webdriver.Chrome(chromedriver)
-broswer.get(main_url)
-print("Current Page Title is : %s" %broswer.title)
+browser= webdriver.Chrome(chromedriver)
+browser.get(main_url)
+print("Current Page Title is : %s" %browser.title)
 
 # Open a new window
-broswer.execute_script("window.open('');")
+browser.execute_script("window.open('');")
 
 # Switch to the new window and open URL B
-broswer.switch_to.window(broswer.window_handles[1])
-broswer.get(tab_url)
+browser.switch_to.window(browser.window_handles[1])
+browser.get(tab_url)
 # …Do something here
-print("Current Page Title is : %s" %broswer.title)
+print("Current Page Title is : %s" %browser.title)
 
 # Close the tab with URL B
-broswer.close()
+browser.close()
 
 # Switch back to the first tab with URL A
-broswer.switch_to.window(broswer.window_handles[0])
-print("Current Page Title is : %s" %broswer.title)
+browser.switch_to.window(browser.window_handles[0])
+print("Current Page Title is : %s" %browser.title)
 ```
 
 I hope that helps!
