@@ -1,0 +1,7 @@
+flask
+bcrypt
+pymongo
+Flask-Bcrypt
+python-dotenv
+flask_sqlalchemy
+Flask-JWT-Extended

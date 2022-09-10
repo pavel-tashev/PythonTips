@@ -1,0 +1,8 @@
+flask
+bcrypt
+pymongo==3.11.0
+flask-login
+Flask-Bcrypt
+Flask-Session
+python-dotenv
+flask_sqlalchemy
